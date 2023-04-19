@@ -1,0 +1,25 @@
+footer.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  footer.rodape h2 {
+    margin: 0;
+  }
+  
+  footer.rodape nav {
+    display: flex;
+  }
+  
+  footer.rodape nav a {
+    margin-left: 10px;
+  }
+  
+  footer.rodape img {
+    height: 30px;
+    width: 30px;
+  }
