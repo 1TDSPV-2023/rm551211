@@ -1,0 +1,35 @@
+.calc {
+    width: 250px;
+    margin: 0 auto;
+  }
+  
+  .visor-calc {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: right;
+  }
+  
+  .btn-calc,
+  .oper-calc,
+  .extra-calc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ccc;
+  }
+  
+  button:active {
+    background-color: #bfbfbf;
+  }
+  
