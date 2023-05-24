@@ -1,27 +1,36 @@
 
+//adicione um atributo a cada objeto sendo eles:
+//avatarUsuario
+//Este atributo deve conter  a URL da imagem de avatar do usuario.
+
+
 
 //LISTA DE USUÁRIOS
 let listaDeUsuarios = [
 
     {
+        avatar:"https://images.unsplash.com/photo-1648183185045-7a5592e66e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=542&q=80",
         nomeCompleto : "José das Couves",
         nomeUsuario : "jose",
         senhaUsuario : "123456"
     }
     ,
     {
+        avatar:"https://images.unsplash.com/photo-1655384286215-f0c925fcd745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=351&q=80",
         nomeCompleto : "João Paulino",
         nomeUsuario : "joao",
         senhaUsuario : "123456"
     }
     ,
     {
+        avatar:"https://images.unsplash.com/photo-1655384286215-f0c925fcd745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=351&q=80",
         nomeCompleto : "Maria Tomaite",
         nomeUsuario : "maria",
         senhaUsuario : "123456"
     }
     ,
     {
+        avatar:"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
         nomeCompleto : "Paulo da Selva",
         nomeUsuario : "paulo",
         senhaUsuario : "123456"

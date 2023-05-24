@@ -1,12 +1,29 @@
+if(localStorage.getItem("user-token") != null){
+    const bemVindoEl = document.querySelector("#bemvindo-user");
+    const userName = document.querySelector("#username");
+    const userImageContainer = document.querySelector(".profile-container");
 
-const bemVindoEl = document.querySelector("#bemvindo-user");
-const botaoLogout = document.querySelector("#btnSair");
+    const botaoLogout = document.querySelector("#btnSair");
 
-//RECUPERANDO O OBJETO USER-VALIDADO DO LOCAL-STORAGE
-const usuarioValidado = JSON.parse(localStorage.getItem("user-validado"));
+    //RECUPERANDO O OBJETO USER-VALIDADO DO LOCAL-STORAGE
+    const usuarioValidado = JSON.parse(localStorage.getItem("user-validado"));
 
-bemVindoEl.innerHTML = usuarioValidado.nomeCompleto;
+    bemVindoEl.innerHTML = usuarioValidado.nomeCompleto;
+    userName.innerHTML = usuarioValidado.nomeUsuario;
 
-botaoLogout.addEventListener("click", ()=>{
-    localStorage.removeItem("user-validado");
-});
+    const newUserImage = document.createElement("img");
+    newUserImage.src = usuarioValidado.avatar;
+
+    userImageContainer.appendChild(newUserImage)
+
+    //REMOVENDO OS ITENS DO LOCAL-STORE
+    botaoLogout.addEventListener("click", ()=>{
+        localStorage.removeItem("user-validado");
+        localStorage.removeItem("user-token");
+        window.location.href = "../login.html";
+    });
+
+}else{
+    alert("Você precisa estar logado para acessar esta página!")
+    window.location.href = "../login.html";
+}
